@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "cat_head",
+      "path": "cat_head"
+    },
+    {
+      "name": "robot_avoider",
+      "path": "robot_avoider"
+    },
+    {
+      "name": "oled_eyes",
+      "path": "oled_eyes"
+    }
+  ],
+  "settings": {},
+  "extensions": {
+    "recommendations": [
+      "platformio.platformio-ide",
+      "wokwi.wokwi-vscode"
+    ]
+  }
+}

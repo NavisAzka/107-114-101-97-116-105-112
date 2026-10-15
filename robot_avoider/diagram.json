@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "author": "KREATIF",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sonarF",
+      "top": -200,
+      "left": -30,
+      "attrs": {
+        "distance": "100"
+      }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sonarL",
+      "top": -200,
+      "left": -330,
+      "attrs": {
+        "distance": "100"
+      }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sonarR",
+      "top": -200,
+      "left": 270,
+      "attrs": {
+        "distance": "100"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledENA",
+      "top": 40,
+      "left": -260,
+      "attrs": {
+        "color": "yellow",
+        "label": "ENA (left speed)"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledIN1",
+      "top": 40,
+      "left": -200,
+      "attrs": {
+        "color": "green",
+        "label": "IN1 (left fwd)"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledIN2",
+      "top": 40,
+      "left": -140,
+      "attrs": {
+        "color": "red",
+        "label": "IN2 (left rev)"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledENB",
+      "top": 160,
+      "left": -260,
+      "attrs": {
+        "color": "yellow",
+        "label": "ENB (right speed)"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledIN3",
+      "top": 160,
+      "left": -200,
+      "attrs": {
+        "color": "green",
+        "label": "IN3 (right fwd)"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledIN4",
+      "top": 160,
+      "left": -140,
+      "attrs": {
+        "color": "red",
+        "label": "IN4 (right rev)"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "sonarF:VCC",
+      "esp:VIN",
+      "red",
+      []
+    ],
+    [
+      "sonarF:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "sonarF:TRIG",
+      "esp:D5",
+      "orange",
+      []
+    ],
+    [
+      "sonarF:ECHO",
+      "esp:D18",
+      "purple",
+      []
+    ],
+    [
+      "sonarL:VCC",
+      "esp:VIN",
+      "red",
+      []
+    ],
+    [
+      "sonarL:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "sonarL:TRIG",
+      "esp:D19",
+      "orange",
+      []
+    ],
+    [
+      "sonarL:ECHO",
+      "esp:D21",
+      "purple",
+      []
+    ],
+    [
+      "sonarR:VCC",
+      "esp:VIN",
+      "red",
+      []
+    ],
+    [
+      "sonarR:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "sonarR:TRIG",
+      "esp:D22",
+      "orange",
+      []
+    ],
+    [
+      "sonarR:ECHO",
+      "esp:D23",
+      "purple",
+      []
+    ],
+    [
+      "ledENA:A",
+      "esp:D25",
+      "green",
+      []
+    ],
+    [
+      "ledENA:C",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "ledIN1:A",
+      "esp:D26",
+      "green",
+      []
+    ],
+    [
+      "ledIN1:C",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "ledIN2:A",
+      "esp:D27",
+      "green",
+      []
+    ],
+    [
+      "ledIN2:C",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "ledENB:A",
+      "esp:D14",
+      "green",
+      []
+    ],
+    [
+      "ledENB:C",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "ledIN3:A",
+      "esp:D33",
+      "green",
+      []
+    ],
+    [
+      "ledIN3:C",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "ledIN4:A",
+      "esp:D32",
+      "green",
+      []
+    ],
+    [
+      "ledIN4:C",
+      "esp:GND.2",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}
